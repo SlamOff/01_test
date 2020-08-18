@@ -12,7 +12,6 @@ export const todoReducer = (state = initialState, action) => {
       };
     }
     case 'REMOVE_TODO': {
-      console.log(state);
       return {
         todoList: state.todoList.filter((state) => state.id !== action.payload.todoList.id)
       };
