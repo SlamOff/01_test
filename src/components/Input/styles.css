@@ -1,0 +1,30 @@
+
+.Wrapper {
+  border-bottom: 2px solid #000;
+  padding-bottom: 30px;
+}
+
+.Button {
+  border: 2px solid green;
+  background-color: green;
+  height: 30px;
+  margin-left: 30px;
+  color: #fff;
+  padding: 0 15px;
+  transition: all .25s;
+  outline: 0;
+  cursor: pointer;
+}
+
+.Button:hover {
+  background-color: #fff;
+  color: green;
+}
+
+.Input {
+  height: 30px;
+  outline: 0;
+  padding: 0 15px;
+  border-radius: 0;
+  border: 1px solid #000;
+}

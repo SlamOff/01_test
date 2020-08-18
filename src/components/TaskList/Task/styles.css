@@ -1,0 +1,87 @@
+.Task {
+  border: 1px solid #000;
+  border-radius: 5px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Task:before {
+  height: 0;
+  transition: height .25s;
+}
+
+.Col {
+  flex: 0 0 33.33%;
+  padding: 15px;
+}
+
+.TaskText {
+  padding: 10px;
+  position: relative;
+  flex-grow: 1;
+}
+
+.TaskText:before {
+  content: '';
+  height: 0;
+  transition: height .25s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: green;
+  font-size: 42px;
+  font-weight: bold;
+  transition: height .25s;
+}
+
+.TaskText.Active:before {
+  content: 'Done';
+  height: 100%;
+  
+}
+
+.TaskButtons {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+  padding: 10px;
+}
+
+.TaskButton {
+  height: 30px;
+  transition: all .25s;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  flex: 0 0 45%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.DeleteButton {
+  background-color: red;
+  border: 1px solid red;
+}
+
+.DeleteButton:hover {
+  background-color: #fff;
+  color: red;
+}
+
+.SuccessButton {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.SuccessButton:hover {
+  background-color: #fff;
+  color: green;
+}
